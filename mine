@@ -1,0 +1,10 @@
+a,b=list(map(int,input().split('x')));l=[[0]*b for i in range(a)];n=int(input());dx=[-1,0,1,1,1,0,-1,-1];dy=[1,1,1,0,-1,-1,-1,0]
+for i in range(n):
+    x0,y0=list(map(int,input().split(',')));l[x0][y0]='*'
+    for i in range(8):
+        x1,y1=dx[i],dy[i];y,x=x0+x1,y0+y1
+        if y>=a or x<0 or x>=b or y<0 :continue    
+        if l[y][x]!='*':l[y][x]+=1
+for i in l:
+    for y in i:print(y,end='')
+    print()
