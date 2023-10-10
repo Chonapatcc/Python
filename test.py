@@ -1,2 +1,1 @@
-for i in range(1,0):
-    print(i)
+print(245//60)
