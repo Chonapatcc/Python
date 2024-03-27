@@ -1,10 +1,5 @@
-class Rectangle:
-    def _init_(self,width,length):
-        self.width =width;
-        self.length =length;
-    def get_area(self):
-        return self.width *self.length;
+a = 10*(0.51**3)*(0.49**2)
 
+b = 10*(0.49**3)*(0.51**2)
 
-
-a=10;b=20;print(a+b)
+print(a+b)
