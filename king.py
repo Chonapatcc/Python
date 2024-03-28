@@ -1,11 +1,13 @@
-cat= []
-for i in range(4):
-    n=int(input())
-    cat.append(n)
-x1,y1,x2,y2 = cat
-x = x1-x2;
-y = y1-y2;
+primes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97]
 
-print("NO") if(x>1 or x<-1 or y>1 or y<-1) else print("YES")
+start =int(input())
+stop = int(input())
 
-    
+
+for i in range(start , stop+1):
+    ch =1
+    for prime in primes:
+        if(i%prime==0):
+            ch=0
+    if ch :
+        print(i)
